@@ -13,7 +13,7 @@ public class Main {
         String answer = scanner.nextLine();
 
         while (!answer.equals(correctAnswer)){
-            System.out.println("პასუხის არასწორია, კიდევ სცადეთ..");
+            System.out.println("პასუხი არასწორია, კიდევ სცადეთ..");
             answer = scanner.nextLine();
         }
 
