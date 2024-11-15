@@ -1,30 +1,24 @@
 package org.example;
 
+import com.sun.source.tree.ContinueTree;
+
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
 
-        int finalScore = 85;
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("რომელი ქალაქია საქართველოს დედაქალაქი ?");
+        String correctAnswer = "თბილისი";
+        String answer = scanner.nextLine();
 
-        switch (finalScore){
-            case 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100 :
-                System.out.println("A");
-                break;
+        while (!answer.equals(correctAnswer)){
+            System.out.println("პასუხის არასწორია, კიდევ სცადეთ..");
+            answer = scanner.nextLine();
+        }
 
-            case 80, 81, 82, 83, 84, 85, 86, 87, 88, 89 :
-                System.out.println("B");
-                break;
-
-
-            case 70, 71, 72, 73, 74, 75, 76, 77, 78, 79 :
-                System.out.println("C");
-                break;
-
-            default:
-                System.out.println("არ გეკუთნის სერტიფიკატი");
-                break;
+        System.out.println("პასუხი სწორია, გილოცავთ თქვენ გეოგრაფიის გურუ ხართ.");
 
         }
 
-
-    }
-}
+        }
